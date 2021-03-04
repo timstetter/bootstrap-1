@@ -22,6 +22,14 @@ header h2 {
   color: #cec8ff;
 }
 
+.carousel {
+  border: solid #5637DD;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .site-footer {
   background-image: linear-gradient(#cec8ff, white);
   padding: 20px 0;
