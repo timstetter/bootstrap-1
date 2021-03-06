@@ -47,7 +47,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <form>
+                        <form>                            
                             <fieldset style="border:none">
                                 <div class="row form-group">
                                     <label for="numCampers" class="col-sm-6 col-form-label">Number of
@@ -63,21 +63,32 @@
                                             <option value="6">6</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div>                            
                                 <div class="row form-group">
                                     <label for="date" class="col-sm-6 col-form-label">Date</label>
                                     <div class="col-sm-6">
                                         <input class="form-control" type="date" name="date" id="date"
                                             placeholder="mm/dd/yyyy">
                                     </div>
+                                </div>                            
+                                <div class="row form-group">
+                                    <label for="siteTent" class="col-sm-6 col-form-label">Campsite Type</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
+                                          </label>
+                                          <label class="btn btn-primary">
+                                            <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
+                                          </label>
+                                    </div>
                                 </div>
+                            </fieldset>                            
                                 <div class="row form-group">
                                     <div class="col">
                                         <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                         <button class="btn btn-primary" type="submit">Search</button>
                                     </div>
-                                </div>
-                            </fieldset>
+                                </div>                            
                         </form>
                     </div>
                 </div>
@@ -253,7 +264,7 @@
         </div>
 
     </main>
-    
+
     <footer class="site-footer">
         <div class="container">
             <div class="row">
