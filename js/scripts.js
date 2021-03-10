@@ -3,7 +3,9 @@ $(function () {
         interval: 3000,
         pause: "false"
     });
-    $("#carouselButton").click(function () {
+    $("#carouselButton").on("click", button)
+
+    function button() {
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
@@ -14,6 +16,6 @@ $(function () {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
 
-    });
+    };
 
 });
