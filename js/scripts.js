@@ -3,7 +3,7 @@ $(function () {
         interval: 3000,
         pause: "false"
     });
-    $("#carouselButton").on("click", () =>
+    $("#carouselButton").click(function () 
 
     {
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -21,14 +21,14 @@ $(function () {
 });
 
 $(function () {
-    $('#reserveButton').on("click", () => {
+    $('#reserveButton').click(function () {
         $('#reserveModal').modal('show');
     });
     
 });
 
 $(function () {
-    $('#loginButton').on("click", () => {
+    $('#loginButton').click(function ()  {
         $('#loginModal').modal('show');
     });
     
