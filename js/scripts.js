@@ -1,5 +1,8 @@
+//function for carousel
+
 $(function () {
     $(".carousel").carousel({
+        // Left the interval at 3000, 2000 felt too fast to me
         interval: 3000,
         pause: "false"
     });
@@ -20,12 +23,16 @@ $(function () {
 
 });
 
+// function for reserveModal
+
 $(function () {
     $('#reserveButton').click(function () {
         $('#reserveModal').modal('show');
     });
     
 });
+
+// function for reserveModal
 
 $(function () {
     $('#loginButton').click(function ()  {
